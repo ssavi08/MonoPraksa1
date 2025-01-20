@@ -1,0 +1,14 @@
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\PCManagement.exe
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\PCManagement.deps.json
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\PCManagement.runtimeconfig.json
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\PCManagement.dll
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net8.0\PCManagement.pdb
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\PCManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\PCManagement.AssemblyInfoInputs.cache
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\PCManagement.AssemblyInfo.cs
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\PCManagement.csproj.CoreCompileInputs.cache
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\PCManagement.dll
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\refint\PCManagement.dll
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\PCManagement.pdb
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\PCManagement.genruntimeconfig.cache
+C:\Users\savi_3\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\PCManagement.dll
