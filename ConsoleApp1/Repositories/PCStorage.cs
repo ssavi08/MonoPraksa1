@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,11 +19,6 @@ namespace PCManagement.Repositories
             pcs.Add(pc);
         }
 
-       /* public void EditPC(int id, Action<PC> editAction)
-        {
-            var pc = GetPCById(id);
-            if (pc != null) editAction(pc);
-        }*/
         public void DeletePC(int id)
         {
             var pc = GetPCById(id);
