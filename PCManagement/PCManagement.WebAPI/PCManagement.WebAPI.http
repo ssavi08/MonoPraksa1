@@ -1,0 +1,6 @@
+@PCManagement.WebAPI_HostAddress = http://localhost:5239
+
+GET {{PCManagement.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
