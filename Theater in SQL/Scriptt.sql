@@ -1,4 +1,4 @@
---Kreating tables
+--Kreiranje tablica
 
 create table "User" (
 "Id" SERIAL primary key,
@@ -65,7 +65,7 @@ constraint "FK_Ticket_User_UserId" foreign key ("UserId") references "User" ("Id
 constraint "FK_Ticket_Payment_PaymentId" foreign key ("PaymentId") references "Payment" ("Id")
 )
 
---Inserting data
+--Unosenje podataka
 
 insert into "User" ("Name", "Email") values
 ('Jure','jure@gmail.com'),
@@ -120,12 +120,12 @@ insert into "Ticket" ("TheaterShowId", "ShowId", "UserId", "SeatNumber", "Paymen
 (3, 3, 3, 30, 3, 150),
 (4, 4, 4, 40, 4, 200);
 
---Commadns
+--Naredbe
 
 update "User" set "Name" = 'Ivan' where "Id" = 2;
 update "User" set "Email" = 'ivanivanic@gmail.com' where "Id" = 2;
 
---View all data
+--Pogledaj sve podatke
 
 select
 "User"."Name" as "User Name",
@@ -156,13 +156,13 @@ join "ShowActor" on "Show"."Id" = "ShowActor"."ShowId"
 join "Actor" on "ShowActor"."ActorId" = "Actor"."Id"
 join "Ticket" on "Show"."Id" = "Ticket"."ShowId";
 
---Mora jedan pa drugi zbog foreign key constraint-a
+--Mora jedan pa drugi delete zbog foreign key constraint-a
 --Opcija: modificirat strani ključ u tablici ShowActor da uključuje ON DELETE CASCADE.
 
 delete from "ShowActor" where "Id" = 4;
 delete from "Actor" where "Id" = 4;
 
---View all tables
+--Pogledaj tablice
 
 select * from "Actor";
 select * from "Show";
