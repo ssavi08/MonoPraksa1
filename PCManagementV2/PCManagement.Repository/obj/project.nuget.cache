@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+EM8reGIbHQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\savi_3\\source\\repos\\PCManagement\\PCManagement.Repository\\PCManagement.Repository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\savi_3\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\savi_3\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\savi_3\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
