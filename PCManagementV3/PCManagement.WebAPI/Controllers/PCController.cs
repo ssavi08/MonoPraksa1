@@ -55,7 +55,7 @@ namespace PCManagement.WebAPI.Controllers
 
             if(result)
             {
-                return Ok();
+                return Ok("PC added.");
             }
             return BadRequest();
             

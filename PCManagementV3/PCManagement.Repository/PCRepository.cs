@@ -13,6 +13,7 @@ namespace PCManagement.Repository
     public class PCRepository
     {
         public const string TABLE_NAME = "\"PC\"";
+
         public async Task<bool> AddPCAsync(PC newPc)
         {
             try
@@ -27,13 +28,13 @@ namespace PCManagement.Repository
                     cmd.Parameters.AddWithValue("cpu", newPc.CPU);
                     cmd.Parameters.AddWithValue("gpu", newPc.GPU);
 
-                    await connection.OpenAsync();
+                    connection.Open();
 
                     var affectedRows = cmd.ExecuteNonQuery();
                     if (affectedRows == 0)
                         return false;
 
-                    await connection.CloseAsync();
+                    connection.Close();
 
                     return true;
                 }
@@ -54,7 +55,7 @@ namespace PCManagement.Repository
                     using var cmd = new NpgsqlCommand(commandText, connection);
                     cmd.Parameters.AddWithValue("id", NpgsqlTypes.NpgsqlDbType.Uuid, id);
 
-                    await connection.OpenAsync();
+                    connection.Open();
 
                     var reader = cmd.ExecuteReader();
 
@@ -64,7 +65,7 @@ namespace PCManagement.Repository
                         return false;
                     }
 
-                    await connection.CloseAsync();
+                    connection.Close();
 
                     commandText = "UPDATE \"PC\" set \"Name\" = @name, \"CPU\" = @cpu, \"GPU\" = @gpu WHERE \"Id\" = @id;";
                     using var updateCommand = new NpgsqlCommand(commandText, connection);
@@ -73,9 +74,9 @@ namespace PCManagement.Repository
                     updateCommand.Parameters.AddWithValue("gpu", updatedPC.GPU);
                     updateCommand.Parameters.AddWithValue("id", NpgsqlTypes.NpgsqlDbType.Uuid, id);
 
-                    await connection.OpenAsync();
+                    connection.Open();
                     var affectedRows = updateCommand.ExecuteNonQuery();
-                    await connection.CloseAsync();
+                    connection.Close();
 
                     return true;
                 }
@@ -96,10 +97,10 @@ namespace PCManagement.Repository
                     using var command = new NpgsqlCommand(commandText, connection);
                     command.Parameters.AddWithValue("id", NpgsqlTypes.NpgsqlDbType.Uuid, id);
 
-                    await connection.OpenAsync();
+                    connection.Open();
 
                     var affectedRows = command.ExecuteNonQuery();
-                    await connection.CloseAsync();
+                    connection.Close();
 
                     return true;
                 }
@@ -120,7 +121,7 @@ namespace PCManagement.Repository
                     var commandText = "SELECT * FROM \"PC\"";
                     using (var command = new NpgsqlCommand(commandText, connection))
                     {
-                        await connection.OpenAsync();
+                        connection.Open();
 
                         var reader = command.ExecuteReader();
                         while (reader.Read())
@@ -135,7 +136,7 @@ namespace PCManagement.Repository
                             pcs.Add(pc);
                         }
 
-                        await connection.CloseAsync();
+                        connection.Close();
                         return pcs;
                     }
                 }
@@ -157,7 +158,7 @@ namespace PCManagement.Repository
                     {
                         command.Parameters.AddWithValue("id", NpgsqlTypes.NpgsqlDbType.Uuid, id);
 
-                        await connection.OpenAsync();
+                        connection.Open();
                         var reader = command.ExecuteReader();
 
                         if (reader.Read())
@@ -170,11 +171,11 @@ namespace PCManagement.Repository
                                 GPU = reader["GPU"].ToString()!
                             };
 
-                            await connection.CloseAsync();
+                            connection.Close();
                             return pc;
                         }
 
-                        await connection.CloseAsync();
+                        connection.Close();
                         return null;
                     }
                 }
@@ -191,7 +192,7 @@ namespace PCManagement.Repository
             {
                 using (var connection = new NpgsqlConnection(DatabaseConfig.connString))
                 {
-                    await connection.OpenAsync();
+                    connection.Open();
                     return connection.State == System.Data.ConnectionState.Open;
                 }
             }
