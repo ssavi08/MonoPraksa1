@@ -1,0 +1,11 @@
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\bin\Debug\net8.0\PCManagement.Common.deps.json
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\bin\Debug\net8.0\PCManagement.Common.dll
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\bin\Debug\net8.0\PCManagement.Common.pdb
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\obj\Debug\net8.0\PCManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\obj\Debug\net8.0\PCManagement.Common.AssemblyInfoInputs.cache
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\obj\Debug\net8.0\PCManagement.Common.AssemblyInfo.cs
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\obj\Debug\net8.0\PCManagement.Common.csproj.CoreCompileInputs.cache
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\obj\Debug\net8.0\PCManagement.Common.dll
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\obj\Debug\net8.0\refint\PCManagement.Common.dll
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\obj\Debug\net8.0\PCManagement.Common.pdb
+C:\Users\savi_3\source\repos\PCManagement\PCManagement.Common\obj\Debug\net8.0\ref\PCManagement.Common.dll
