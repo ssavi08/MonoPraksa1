@@ -11,34 +11,11 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PCManagement.WebAPI.Controllers
 {
-   
-
-    public class NpgsqlPCManagementRepository
-    {
-        private readonly NpgsqlConnection _connection;
-
-        public NpgsqlPCManagementRepository()
-        {
-            _connection = new NpgsqlConnection(DatabaseConfig.connString);
-            _connection.Open();
-        }
-
-        
-
-    }
-
     [Route("api/[controller]")]
     [ApiController]
     public class PCController : ControllerBase
     {
-        public const string TABLE_NAME = "\"PC\"";
-        private readonly NpgsqlPCManagementRepository _repository;
-
-        public PCController()
-        {
-            _repository = new NpgsqlPCManagementRepository();
-        }
-
+        
         [HttpPost]
         public async Task<IActionResult> AddPCAsync([FromBody]PC pc)
         {
