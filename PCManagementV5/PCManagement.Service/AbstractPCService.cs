@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-using PCManagement.Common;
-using PCManagement.Repository;
+﻿using PCManagement.Common;
 using PCManagement.RepositoryCommon;
 using PCManagement.ServiceCommon;
 using PCManagement.WebAPI.Models;
@@ -20,6 +13,7 @@ namespace PCManagement.Service
         {
             _repository = repository;
         }
+
         public bool TestDatabaseConnectionAsync()
         {
             return _repository.TestDatabaseConnectionAsync();
@@ -42,12 +36,12 @@ namespace PCManagement.Service
 
         public async Task<bool> UpdatePCAsync(Guid id, PC updatedPC)
         {
-            return await(_repository.UpdatePCAsync(id, updatedPC));
+            return await (_repository.UpdatePCAsync(id, updatedPC));
         }
 
         public Task<bool> AddPCAsync(PC newPc)
         {
-            return  _repository.AddPCAsync(newPc);
+            return _repository.AddPCAsync(newPc);
         }
     }
 }

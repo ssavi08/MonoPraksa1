@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Tracing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PCManagement.Common;
+﻿using PCManagement.Common;
 using PCManagement.RepositoryCommon;
 using PCManagement.WebAPI.Models;
 

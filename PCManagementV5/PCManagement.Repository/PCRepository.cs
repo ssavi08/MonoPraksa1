@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using Npgsql;
 using PCManagement.Common;
 using PCManagement.RepositoryCommon;
@@ -25,9 +20,9 @@ namespace PCManagement.Repository
                     using var cmd = new NpgsqlCommand(commandText, connection);
 
                     cmd.Parameters.AddWithValue("id", Guid.NewGuid());
-                    cmd.Parameters.AddWithValue("name", newPc.Name);
-                    cmd.Parameters.AddWithValue("cpu", newPc.CPU);
-                    cmd.Parameters.AddWithValue("gpu", newPc.GPU);
+                    cmd.Parameters.AddWithValue("name", newPc.Name ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("cpu", newPc.CPU ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("gpu", newPc.GPU ?? (object)DBNull.Value);
 
                     connection.Open();
 
@@ -70,9 +65,9 @@ namespace PCManagement.Repository
 
                     commandText = "UPDATE \"PC\" set \"Name\" = @name, \"CPU\" = @cpu, \"GPU\" = @gpu WHERE \"Id\" = @id;";
                     using var updateCommand = new NpgsqlCommand(commandText, connection);
-                    updateCommand.Parameters.AddWithValue("name", updatedPC.Name);
-                    updateCommand.Parameters.AddWithValue("cpu", updatedPC.CPU);
-                    updateCommand.Parameters.AddWithValue("gpu", updatedPC.GPU);
+                    updateCommand.Parameters.AddWithValue("name", updatedPC.Name ?? (object)DBNull.Value);
+                    updateCommand.Parameters.AddWithValue("cpu", updatedPC.CPU ?? (object)DBNull.Value);
+                    updateCommand.Parameters.AddWithValue("gpu", updatedPC.GPU ?? (object)DBNull.Value);
                     updateCommand.Parameters.AddWithValue("id", NpgsqlTypes.NpgsqlDbType.Uuid, id);
 
                     await connection.OpenAsync();
@@ -119,14 +114,13 @@ namespace PCManagement.Repository
             {
                 using (var connection = new NpgsqlConnection(DatabaseConfig.connString))
                 {
-
                     var query = new StringBuilder("SELECT * FROM \"PC\"");
                     var parameters = new List<NpgsqlParameter>();
 
                     ApplySorting(sorting, query);
 
                     //var commandText = "SELECT * FROM \"PC\" ORDER BY \"orderBy\" \"sortOrder\" LIMIT @Rpp OFFSET @Offset";
-                    
+
                     using (var command = new NpgsqlCommand(query.ToString(), connection))
                     {
                         command.Parameters.AddRange(parameters.ToArray());
@@ -215,11 +209,7 @@ namespace PCManagement.Repository
         private void ApplySorting(Sorting sorting, StringBuilder query)
         {
             if (sorting == null) return;
-
-            var orderBy = string.IsNullOrWhiteSpace(sorting.OrderBy) ? "Id" : sorting.OrderBy;
-            var sortOrder = sorting.SortOrder.ToUpper() == "DESC" ? "DESC" : "ASC";
-
-            query.Append($" ORDER BY \"{orderBy}\" {sortOrder}");
+            query.Append($" ORDER BY \"{sorting.OrderBy}\" {sorting.SortOrder}");
         }
     }
 }

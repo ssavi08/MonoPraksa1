@@ -1,14 +1,7 @@
-﻿using System.Reflection.Metadata.Ecma335;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using Npgsql;
+﻿using Microsoft.AspNetCore.Mvc;
 using PCManagement.Common;
-using PCManagement.Service;
 using PCManagement.ServiceCommon;
 using PCManagement.WebAPI.Models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PCManagement.WebAPI.Controllers
 {
@@ -24,7 +17,6 @@ namespace PCManagement.WebAPI.Controllers
             _service = servo;
         }
 
-        
         [HttpPost]
         public async Task<IActionResult> AddPCAsync([FromBody] PC pc)
         {
@@ -79,7 +71,7 @@ namespace PCManagement.WebAPI.Controllers
         {
             //PCService pcService = new PCService();
 
-           var sorting = new Sorting
+            var sorting = new Sorting
             {
                 OrderBy = orderBy,
                 SortOrder = sortOrder
@@ -91,7 +83,7 @@ namespace PCManagement.WebAPI.Controllers
             {
                 return Ok(pcs);
             }
-            
+
             return NotFound(new
             {
                 error = "Not Found",

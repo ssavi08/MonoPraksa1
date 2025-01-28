@@ -1,10 +1,4 @@
-﻿using System.Net.NetworkInformation;
-using System.Security.Cryptography.X509Certificates;
-using Autofac.Core;
-using PCManagement.Common;
-using PCManagement.Repository;
-using PCManagement.RepositoryCommon;
-using PCManagement.WebAPI.Models;
+﻿using PCManagement.RepositoryCommon;
 
 namespace PCManagement.Service
 {
@@ -15,12 +9,6 @@ namespace PCManagement.Service
         public PCService(IPCRepository repository) : base(repository)
         {
             _repository = repository;
-        }
-
-
-        public async Task<List<PC?>> GetAllPCsAsync(Sorting sorting)
-        {
-            return await _repository.GetAllPCsAsync(sorting);
         }
 
         //public async Task<bool> AddPCAsync(PC newPc)
