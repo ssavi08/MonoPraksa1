@@ -1,0 +1,248 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38538F94-CB80-4810-A61E-D60CD71A9A92}|PCManagement.Repository\\PCManagement.Repository.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.repository\\pcrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38538F94-CB80-4810-A61E-D60CD71A9A92}|PCManagement.Repository\\PCManagement.Repository.csproj|solutionrelative:pcmanagement.repository\\pcrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C168F79-CA36-4BAF-B8B6-9A5BEF66F915}|PCManagement.Common\\PCManagement.Common.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.common\\sorting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C168F79-CA36-4BAF-B8B6-9A5BEF66F915}|PCManagement.Common\\PCManagement.Common.csproj|solutionrelative:pcmanagement.common\\sorting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C168F79-CA36-4BAF-B8B6-9A5BEF66F915}|PCManagement.Common\\PCManagement.Common.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.common\\pcfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C168F79-CA36-4BAF-B8B6-9A5BEF66F915}|PCManagement.Common\\PCManagement.Common.csproj|solutionrelative:pcmanagement.common\\pcfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C168F79-CA36-4BAF-B8B6-9A5BEF66F915}|PCManagement.Common\\PCManagement.Common.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.common\\paging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C168F79-CA36-4BAF-B8B6-9A5BEF66F915}|PCManagement.Common\\PCManagement.Common.csproj|solutionrelative:pcmanagement.common\\paging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC72E7E-1309-405F-A501-31B75050076C}|PCManagement.Service\\PCManagement.Service.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.service\\pcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC72E7E-1309-405F-A501-31B75050076C}|PCManagement.Service\\PCManagement.Service.csproj|solutionrelative:pcmanagement.service\\pcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88DED6AB-0D15-4CDC-B5A7-B1F2FA7DBA14}|PCManagement.WebAPI\\PCManagement.WebAPI.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.webapi\\controllers\\pccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88DED6AB-0D15-4CDC-B5A7-B1F2FA7DBA14}|PCManagement.WebAPI\\PCManagement.WebAPI.csproj|solutionrelative:pcmanagement.webapi\\controllers\\pccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC72E7E-1309-405F-A501-31B75050076C}|PCManagement.Service\\PCManagement.Service.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.service\\abstractpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC72E7E-1309-405F-A501-31B75050076C}|PCManagement.Service\\PCManagement.Service.csproj|solutionrelative:pcmanagement.service\\abstractpcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EAFE28F-0078-4C41-A7D0-82337EC47AFC}|PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.servicecommon\\ipcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EAFE28F-0078-4C41-A7D0-82337EC47AFC}|PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj|solutionrelative:pcmanagement.servicecommon\\ipcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3D6BC3-E712-4DC1-85E5-BEF0C0EC4C5D}|PCManagement.Model\\PCManagement.Model.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.model\\models\\pc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E3D6BC3-E712-4DC1-85E5-BEF0C0EC4C5D}|PCManagement.Model\\PCManagement.Model.csproj|solutionrelative:pcmanagement.model\\models\\pc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F88FBF9-2C4E-4448-A62E-71001C6DC1F2}|PCManagement.RepositoryCommon\\PCManagement.RepositoryCommon.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.repositorycommon\\ipcrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F88FBF9-2C4E-4448-A62E-71001C6DC1F2}|PCManagement.RepositoryCommon\\PCManagement.RepositoryCommon.csproj|solutionrelative:pcmanagement.repositorycommon\\ipcrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38538F94-CB80-4810-A61E-D60CD71A9A92}|PCManagement.Repository\\PCManagement.Repository.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.repository\\abstractpcrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38538F94-CB80-4810-A61E-D60CD71A9A92}|PCManagement.Repository\\PCManagement.Repository.csproj|solutionrelative:pcmanagement.repository\\abstractpcrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88DED6AB-0D15-4CDC-B5A7-B1F2FA7DBA14}|PCManagement.WebAPI\\PCManagement.WebAPI.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88DED6AB-0D15-4CDC-B5A7-B1F2FA7DBA14}|PCManagement.WebAPI\\PCManagement.WebAPI.csproj|solutionrelative:pcmanagement.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88DED6AB-0D15-4CDC-B5A7-B1F2FA7DBA14}|PCManagement.WebAPI\\PCManagement.WebAPI.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.webapi\\pcmanagement.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{88DED6AB-0D15-4CDC-B5A7-B1F2FA7DBA14}|PCManagement.WebAPI\\PCManagement.WebAPI.csproj|solutionrelative:pcmanagement.webapi\\pcmanagement.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C168F79-CA36-4BAF-B8B6-9A5BEF66F915}|PCManagement.Common\\PCManagement.Common.csproj|c:\\users\\savi_3\\documents\\github\\monopraksa1\\pcmanagementv5\\pcmanagement.common\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C168F79-CA36-4BAF-B8B6-9A5BEF66F915}|PCManagement.Common\\PCManagement.Common.csproj|solutionrelative:pcmanagement.common\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 216,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Paging.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\Paging.cs",
+              "RelativeDocumentMoniker": "PCManagement.Common\\Paging.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\Paging.cs",
+              "RelativeToolTip": "PCManagement.Common\\Paging.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T09:15:41.045Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sorting.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\Sorting.cs",
+              "RelativeDocumentMoniker": "PCManagement.Common\\Sorting.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\Sorting.cs",
+              "RelativeToolTip": "PCManagement.Common\\Sorting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T09:16:58.611Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PCFilter.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCFilter.cs",
+              "RelativeDocumentMoniker": "PCManagement.Common\\PCFilter.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCFilter.cs",
+              "RelativeToolTip": "PCManagement.Common\\PCFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T09:19:23.339Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PCService.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\PCService.cs",
+              "RelativeDocumentMoniker": "PCManagement.Service\\PCService.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\PCService.cs",
+              "RelativeToolTip": "PCManagement.Service\\PCService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T10:50:38.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PCController.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\Controllers\\PCController.cs",
+              "RelativeDocumentMoniker": "PCManagement.WebAPI\\Controllers\\PCController.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\Controllers\\PCController.cs",
+              "RelativeToolTip": "PCManagement.WebAPI\\Controllers\\PCController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowE0AAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T14:01:45.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AbstractPCRepository.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Repository\\AbstractPCRepository.cs",
+              "RelativeDocumentMoniker": "PCManagement.Repository\\AbstractPCRepository.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Repository\\AbstractPCRepository.cs",
+              "RelativeToolTip": "PCManagement.Repository\\AbstractPCRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T13:40:47.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PCRepository.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Repository\\PCRepository.cs",
+              "RelativeDocumentMoniker": "PCManagement.Repository\\PCRepository.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Repository\\PCRepository.cs",
+              "RelativeToolTip": "PCManagement.Repository\\PCRepository.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAkwNYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T13:30:19.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AbstractPCService.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\AbstractPCService.cs",
+              "RelativeDocumentMoniker": "PCManagement.Service\\AbstractPCService.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\AbstractPCService.cs",
+              "RelativeToolTip": "PCManagement.Service\\AbstractPCService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA/wCIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T13:06:33.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPCService.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.ServiceCommon\\IPCService.cs",
+              "RelativeDocumentMoniker": "PCManagement.ServiceCommon\\IPCService.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.ServiceCommon\\IPCService.cs",
+              "RelativeToolTip": "PCManagement.ServiceCommon\\IPCService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T07:17:09.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IPCRepository.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.RepositoryCommon\\IPCRepository.cs",
+              "RelativeDocumentMoniker": "PCManagement.RepositoryCommon\\IPCRepository.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.RepositoryCommon\\IPCRepository.cs",
+              "RelativeToolTip": "PCManagement.RepositoryCommon\\IPCRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T13:30:27.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PC.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\Models\\PC.cs",
+              "RelativeDocumentMoniker": "PCManagement.Model\\Models\\PC.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\Models\\PC.cs",
+              "RelativeToolTip": "PCManagement.Model\\Models\\PC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T09:13:15.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "PCManagement.WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\Program.cs",
+              "RelativeToolTip": "PCManagement.WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T07:28:42.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PCManagement.WebAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\PCManagement.WebAPI.csproj",
+              "RelativeDocumentMoniker": "PCManagement.WebAPI\\PCManagement.WebAPI.csproj",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\PCManagement.WebAPI.csproj",
+              "RelativeToolTip": "PCManagement.WebAPI\\PCManagement.WebAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-28T07:28:40.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DatabaseConfig.cs",
+              "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\DatabaseConfig.cs",
+              "RelativeDocumentMoniker": "PCManagement.Common\\DatabaseConfig.cs",
+              "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\DatabaseConfig.cs",
+              "RelativeToolTip": "PCManagement.Common\\DatabaseConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T13:42:04.584Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

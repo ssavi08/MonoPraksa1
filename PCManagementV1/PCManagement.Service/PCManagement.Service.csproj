@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PCManagement.Model\PCManagement.Model.csproj" />
+    <ProjectReference Include="..\PCManagement.RepositoryCommon\PCManagement.RepositoryCommon.csproj" />
+    <ProjectReference Include="..\PCManagement.Repository\PCManagement.Repository.csproj" />
+    <ProjectReference Include="..\PCManagement.ServiceCommon\PCManagement.ServiceCommon.csproj" />
+  </ItemGroup>
+
+</Project>

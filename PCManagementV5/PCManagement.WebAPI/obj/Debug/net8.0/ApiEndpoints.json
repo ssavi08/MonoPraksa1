@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "PCManagement.WebAPI.Controllers.PCController",
+    "Method": "AddPCAsync",
+    "RelativePath": "api/PC",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pc",
+        "Type": "PCManagement.WebAPI.Models.PC",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PCManagement.WebAPI.Controllers.PCController",
+    "Method": "GetAllPCsAsync",
+    "RelativePath": "api/PC",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortOrder",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PCManagement.WebAPI.Controllers.PCController",
+    "Method": "DeletePCAsync",
+    "RelativePath": "api/PC/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PCManagement.WebAPI.Controllers.PCController",
+    "Method": "GetPCAsync",
+    "RelativePath": "api/PC/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PCManagement.WebAPI.Controllers.PCController",
+    "Method": "UpdatePCAsync",
+    "RelativePath": "api/PC/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedPC",
+        "Type": "PCManagement.WebAPI.Models.PC",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PCManagement.WebAPI.Controllers.PCController",
+    "Method": "TestDatabaseConnectionAsync",
+    "RelativePath": "api/PC/testconn",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
