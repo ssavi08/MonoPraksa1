@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "LQNK6YykUhMPjmim6dqbhwuK+6v0DaFakZYLoFO42Hg=",
+  "Source": "PCManagement.WebAPI",
+  "BasePath": "_content/PCManagement.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
