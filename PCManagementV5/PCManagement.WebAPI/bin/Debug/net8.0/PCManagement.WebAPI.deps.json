@@ -11,6 +11,7 @@
           "Autofac": "8.2.0",
           "Autofac.Extensions.DependencyInjection": "10.0.0",
           "Npgsql": "9.0.2",
+          "PCManagement.Common": "1.0.0",
           "PCManagement.Model": "1.0.0",
           "PCManagement.Service": "1.0.0",
           "PCManagement.ServiceCommon": "1.0.0",
@@ -173,6 +174,7 @@
       "PCManagement.Service/1.0.0": {
         "dependencies": {
           "Autofac": "8.2.0",
+          "PCManagement.Common": "1.0.0",
           "PCManagement.Model": "1.0.0",
           "PCManagement.Repository": "1.0.0",
           "PCManagement.RepositoryCommon": "1.0.0",

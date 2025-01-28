@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PCManagement.Common\PCManagement.Common.csproj" />
     <ProjectReference Include="..\PCManagement.Model\PCManagement.Model.csproj" />
     <ProjectReference Include="..\PCManagement.RepositoryCommon\PCManagement.RepositoryCommon.csproj" />
     <ProjectReference Include="..\PCManagement.Repository\PCManagement.Repository.csproj" />

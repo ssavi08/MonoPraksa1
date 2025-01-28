@@ -19,7 +19,7 @@ namespace PCManagement.Repository
 
         public abstract Task<PC?> GetPCAsync(Guid id);
 
-        public abstract Task<List<PC?>> GetAllPCsAsync(Sorting sorting);
+        public abstract Task<List<PC?>> GetAllPCsAsync(Sorting sorting, PCFilter filter);
 
         public abstract Task<bool> DeletePCAsync(Guid id);
 

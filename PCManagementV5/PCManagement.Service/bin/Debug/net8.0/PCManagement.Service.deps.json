@@ -9,6 +9,7 @@
       "PCManagement.Service/1.0.0": {
         "dependencies": {
           "Autofac": "8.2.0",
+          "PCManagement.Common": "1.0.0",
           "PCManagement.Model": "1.0.0",
           "PCManagement.Repository": "1.0.0",
           "PCManagement.RepositoryCommon": "1.0.0",

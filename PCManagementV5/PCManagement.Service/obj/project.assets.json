@@ -362,6 +362,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Autofac >= 8.2.0",
+      "PCManagement.Common >= 1.0.0",
       "PCManagement.Model >= 1.0.0",
       "PCManagement.Repository >= 1.0.0",
       "PCManagement.RepositoryCommon >= 1.0.0",
@@ -400,6 +401,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCManagement.Common.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCManagement.Common.csproj"
+            },
             "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj": {
               "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj"
             },

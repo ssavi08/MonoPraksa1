@@ -32,6 +32,21 @@
         "Name": "sortOrder",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "searchQuery",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "cpu",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "gpu",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

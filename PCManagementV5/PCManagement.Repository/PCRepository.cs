@@ -107,7 +107,7 @@ namespace PCManagement.Repository
             }
         }
 
-        public async Task<List<PC?>> GetAllPCsAsync(Sorting sorting)
+        public async Task<List<PC?>> GetAllPCsAsync(Sorting sorting, PCFilter filter)
         {
             var pcs = new List<PC?>();
             try
@@ -117,6 +117,7 @@ namespace PCManagement.Repository
                     var query = new StringBuilder("SELECT * FROM \"PC\"");
                     var parameters = new List<NpgsqlParameter>();
 
+                    ApplyFilter(filter, query, parameters);
                     ApplySorting(sorting, query);
 
                     //var commandText = "SELECT * FROM \"PC\" ORDER BY \"orderBy\" \"sortOrder\" LIMIT @Rpp OFFSET @Offset";
@@ -210,6 +211,31 @@ namespace PCManagement.Repository
         {
             if (sorting == null) return;
             query.Append($" ORDER BY \"{sorting.OrderBy}\" {sorting.SortOrder}");
+        }
+
+        private void ApplyFilter(PCFilter filter, StringBuilder query, List<NpgsqlParameter> parameters)
+        {
+            if (filter == null) return;
+
+            if (!string.IsNullOrWhiteSpace(filter.SearchQuery))
+            {
+                query.Append(" WHERE \"Name\" ILIKE @SearchQuery");
+                parameters.Add(new NpgsqlParameter("@SearchQuery", $"%{filter.SearchQuery}%"));
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.CPU))
+            {
+                query.Append(parameters.Count == 0 ? " WHERE" : " AND");
+                query.Append(" \"CPU\" = @CPU");
+                parameters.Add(new NpgsqlParameter("@CPU", filter.CPU));
+            }
+
+            if (!string.IsNullOrWhiteSpace(filter.GPU))
+            {
+                query.Append(parameters.Count == 0 ? " WHERE" : " AND");
+                query.Append(" \"GPU\" = @GPU");
+                parameters.Add(new NpgsqlParameter("@GPU", filter.GPU));
+            }
         }
     }
 }

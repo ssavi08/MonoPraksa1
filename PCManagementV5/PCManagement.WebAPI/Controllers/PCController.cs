@@ -11,7 +11,6 @@ namespace PCManagement.WebAPI.Controllers
     {
         private IPCService _service;
 
-        //PCService pcService = new PCService();
         public PCController(IPCService servo)
         {
             _service = servo;
@@ -67,9 +66,17 @@ namespace PCManagement.WebAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllPCsAsync([FromQuery] string orderBy = "Id", [FromQuery] string sortOrder = "ASC")
+        public async Task<IActionResult> GetAllPCsAsync([FromQuery] string orderBy = "Id",
+                [FromQuery] string sortOrder = "ASC",
+                [FromQuery] string searchQuery = "",
+                [FromQuery] string cpu = "",
+                [FromQuery] string gpu = "")
         {
             //PCService pcService = new PCService();
+            var filter = new PCFilter
+            {
+                SearchQuery = searchQuery
+            };
 
             var sorting = new Sorting
             {
@@ -77,7 +84,7 @@ namespace PCManagement.WebAPI.Controllers
                 SortOrder = sortOrder
             };
 
-            var pcs = await _service.GetAllPCsAsync(sorting);
+            var pcs = await _service.GetAllPCsAsync(sorting, filter);
 
             if (pcs.Count > 0)
             {
