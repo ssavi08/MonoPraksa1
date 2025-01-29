@@ -107,9 +107,9 @@ namespace PCManagement.Repository
             }
         }
 
-        public async Task<List<PC?>> GetAllPCsAsync(Sorting sorting, PCFilter filter)
+        public async Task<List<PC>?> GetAllPCsAsync(Sorting sorting, PCFilter filter, Paging paging)
         {
-            var pcs = new List<PC?>();
+            var pcs = new List<PC>();
             try
             {
                 using (var connection = new NpgsqlConnection(DatabaseConfig.connString))
@@ -117,13 +117,12 @@ namespace PCManagement.Repository
                     var query = new StringBuilder("SELECT * FROM \"PC\"");
                     var parameters = new List<NpgsqlParameter>();
 
-                    ApplyFilter(filter, query, parameters);
-                    ApplySorting(sorting, query);
-
-                    //var commandText = "SELECT * FROM \"PC\" ORDER BY \"orderBy\" \"sortOrder\" LIMIT @Rpp OFFSET @Offset";
-
                     using (var command = new NpgsqlCommand(query.ToString(), connection))
                     {
+                        ApplyFilter(filter, query, parameters);
+                        ApplySorting(sorting, query);
+                        ApplyPaging(paging, query, command);
+
                         command.Parameters.AddRange(parameters.ToArray());
 
                         await connection.OpenAsync();
@@ -236,6 +235,15 @@ namespace PCManagement.Repository
                 query.Append(" \"GPU\" = @GPU");
                 parameters.Add(new NpgsqlParameter("@GPU", filter.GPU));
             }
+        }
+
+        private void ApplyPaging(Paging paging, StringBuilder query, NpgsqlCommand command)
+        {
+            if (paging == null) return;
+
+            query.Append($" LIMIT @rpp OFFSET (@pageNumber -1)@ * @rpp");
+            command.Parameters.AddWithValue("rpp", paging.Rpp);
+            command.Parameters.AddWithValue("pageNumber", paging.PageNumber);
         }
     }
 }

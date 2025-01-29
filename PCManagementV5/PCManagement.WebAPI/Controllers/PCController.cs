@@ -26,8 +26,6 @@ namespace PCManagement.WebAPI.Controllers
                     message = "Invalid data."
                 });
 
-            //PCService pcService = new PCService();
-
             bool result = await _service.AddPCAsync(pc);
 
             if (result)
@@ -56,7 +54,6 @@ namespace PCManagement.WebAPI.Controllers
         [HttpGet("testconn")]
         public IActionResult TestDatabaseConnectionAsync()
         {
-            //var result = ;
             if (_service.TestDatabaseConnectionAsync())
             {
                 return Ok("Successfully connected to the database.");
@@ -70,9 +67,11 @@ namespace PCManagement.WebAPI.Controllers
                 [FromQuery] string sortOrder = "ASC",
                 [FromQuery] string searchQuery = "",
                 [FromQuery] string cpu = "",
-                [FromQuery] string gpu = "")
+                [FromQuery] string gpu = "",
+                [FromQuery] int currentPage = 1,
+                [FromQuery] int rpp = 10)
+
         {
-            //PCService pcService = new PCService();
             var filter = new PCFilter
             {
                 SearchQuery = searchQuery
@@ -84,7 +83,12 @@ namespace PCManagement.WebAPI.Controllers
                 SortOrder = sortOrder
             };
 
-            var pcs = await _service.GetAllPCsAsync(sorting, filter);
+            var paging = new Paging
+            {
+                PageNumber = currentPage,
+                Rpp = rpp
+            };
+            var pcs = await _service.GetAllPCsAsync(sorting, filter, paging);
 
             if (pcs.Count > 0)
             {

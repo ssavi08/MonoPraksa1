@@ -9,7 +9,7 @@ namespace PCManagement.ServiceCommon
 
         Task<PC?> GetPCAsync(Guid id);
 
-        Task<List<PC?>> GetAllPCsAsync(Sorting sorting, PCFilter filter);
+        Task<List<PC>?> GetAllPCsAsync(Sorting sorting, PCFilter filter, Paging paging);
 
         Task<bool> DeletePCAsync(Guid id);
 

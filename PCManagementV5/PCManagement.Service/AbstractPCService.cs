@@ -24,9 +24,9 @@ namespace PCManagement.Service
             return _repository.GetPCAsync(id);
         }
 
-        public async Task<List<PC?>> GetAllPCsAsync(Sorting sorting, PCFilter filter)
+        public async Task<List<PC>?> GetAllPCsAsync(Sorting sorting, PCFilter filter, Paging paging)
         {
-            return await _repository.GetAllPCsAsync(sorting, filter);
+            return await _repository.GetAllPCsAsync(sorting, filter, paging);
         }
 
         public async Task<bool> DeletePCAsync(Guid id)

@@ -47,6 +47,16 @@
         "Name": "gpu",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "currentPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "rpp",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
