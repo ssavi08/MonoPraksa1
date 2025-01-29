@@ -2,8 +2,8 @@
 {
     public class Sorting
     {
-        public string OrderBy { get; set; } = "Id";
+        public string? OrderBy { get; set; }
 
-        public string SortOrder { get; set; } = "ASC";
+        public string? SortOrder { get; set; }
     }
 }

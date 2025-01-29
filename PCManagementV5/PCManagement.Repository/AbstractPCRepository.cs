@@ -17,9 +17,9 @@ namespace PCManagement.Repository
 
         public abstract bool TestDatabaseConnectionAsync();
 
-        public abstract Task<PC?> GetPCAsync(Guid id);
+        public abstract Task<PC> GetPCAsync(Guid id);
 
-        public abstract Task<List<PC>?> GetAllPCsAsync(Sorting sorting, PCFilter filter, Paging paging);
+        public abstract Task<List<PC>> GetAllPCsAsync(Sorting sorting, PCFilter filter, Paging paging);
 
         public abstract Task<bool> DeletePCAsync(Guid id);
 

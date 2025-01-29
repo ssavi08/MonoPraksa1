@@ -7,9 +7,9 @@ namespace PCManagement.RepositoryCommon
     {
         public bool TestDatabaseConnectionAsync();
 
-        public Task<PC?> GetPCAsync(Guid id);
+        public Task<PC> GetPCAsync(Guid id);
 
-        public Task<List<PC>?> GetAllPCsAsync(Sorting sorting, PCFilter filter, Paging paging);
+        public Task<List<PC>> GetAllPCsAsync(Sorting sorting, PCFilter filter, Paging paging);
 
         public Task<bool> DeletePCAsync(Guid id);
 

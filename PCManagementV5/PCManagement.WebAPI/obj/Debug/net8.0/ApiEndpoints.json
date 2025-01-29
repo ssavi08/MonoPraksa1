@@ -34,7 +34,7 @@
         "IsRequired": false
       },
       {
-        "Name": "searchQuery",
+        "Name": "pcName",
         "Type": "System.String",
         "IsRequired": false
       },

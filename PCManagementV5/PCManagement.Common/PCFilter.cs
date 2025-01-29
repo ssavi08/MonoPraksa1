@@ -2,8 +2,8 @@
 {
     public class PCFilter
     {
-        public string? SearchQuery { get; set; }
-        public string? CPU { get; set; }
-        public string? GPU { get; set; }
+        public string? PCName { get; set; }
+        public string? CpuModelName { get; set; }
+        public string? GpuModelName { get; set; }
     }
 }

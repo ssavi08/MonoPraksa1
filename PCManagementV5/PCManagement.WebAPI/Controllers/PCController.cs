@@ -65,7 +65,7 @@ namespace PCManagement.WebAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllPCsAsync([FromQuery] string orderBy = "Id",
                 [FromQuery] string sortOrder = "ASC",
-                [FromQuery] string searchQuery = "",
+                [FromQuery] string pcName = "",
                 [FromQuery] string cpu = "",
                 [FromQuery] string gpu = "",
                 [FromQuery] int currentPage = 1,
@@ -74,7 +74,9 @@ namespace PCManagement.WebAPI.Controllers
         {
             var filter = new PCFilter
             {
-                SearchQuery = searchQuery
+                PCName = pcName,
+                CpuModelName = cpu,
+                GpuModelName = gpu
             };
 
             var sorting = new Sorting

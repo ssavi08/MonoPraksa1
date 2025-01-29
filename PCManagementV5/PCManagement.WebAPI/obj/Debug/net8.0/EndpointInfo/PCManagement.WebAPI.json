@@ -57,7 +57,7 @@
             }
           },
           {
-            "name": "searchQuery",
+            "name": "pcName",
             "in": "query",
             "schema": {
               "type": "string",
@@ -216,11 +216,11 @@
             "type": "string",
             "nullable": true
           },
-          "cpu": {
+          "cpuModelName": {
             "type": "string",
             "nullable": true
           },
-          "gpu": {
+          "gpuModelName": {
             "type": "string",
             "nullable": true
           }
