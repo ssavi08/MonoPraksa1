@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Components Manager</title>
+    <script defer src="script.js"></script> 
+</head>
+<body>
+
+    <div class="container">
+        <h2>PC Manager</h2>
+        <h3 id="form-title">Add New PC</h3>
+        <form id="pc-form">
+            <div class="form-group">
+                <label for="pcName">PC Name</label>
+                <input type="text" id="pcName" required>
+            </div>
+            <div class="form-group">
+                <label for="pcCpu">CPU</label>
+                <input type="text" id="pcCpu" required> 
+            </div>
+            <div class="form-group">
+                <label for="pcGpu">GPU</label>
+                <input type="text" id="pcGpu" required>
+            </div>
+            <button type="submit" class="btn-primary">Save PC</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h3>PC List</h3>
+        <div id="pc-list"></div>
+    </div>
+
+    <script></script>
+</body>
+</html>
