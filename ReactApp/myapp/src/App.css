@@ -1,5 +1,5 @@
 table {
-  border: 2px solid rgb(19, 121, 121);
+  border: 2px solid rgb(20, 89, 135);
   width: 400px;
   height: 30px;
 }
@@ -14,4 +14,13 @@ td {
 
 .form-group label {
   display: block;
+}
+
+.headerhead {
+  color: rgb(20, 89, 135);
+}
+.empty-list-message{
+  color: rgb(209, 131, 42);
+  font-size: 20px;
+  font-weight: bold;
 }

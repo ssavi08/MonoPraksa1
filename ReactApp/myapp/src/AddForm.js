@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import './index.css';
 import Button from "./Button";
 
 export default function AddForm({ pcs, setPCs }) {
@@ -10,10 +11,18 @@ export default function AddForm({ pcs, setPCs }) {
         setPC((prevPC) => ({ ...prevPC, [name]: value }));
     }
 
+    function savePCs(pcs) {
+        localStorage.setItem("pcs", JSON.stringify(pcs));
+    }
+
     function handleSubmit(event) {
+        console.log(pc);
+        console.log(pcs);
         const newPC = { id: Date.now().toString(), ...pc };
         const updatedPCs = [...pcs, newPC];
+        savePCs(updatedPCs); 
         setPCs(updatedPCs); // Updates the state in App.js
+        setPC({ id: "", name: "", cpu: "", gpu: "" });
     }
 
     return (
@@ -49,7 +58,7 @@ export default function AddForm({ pcs, setPCs }) {
                         onChange={handleChange} 
                     />
                 </div>
-                <Button text="Save PC" type="submit" />
+                <Button className="save-button" text="Save" type="submit" />
             </form>
         </div>
     );

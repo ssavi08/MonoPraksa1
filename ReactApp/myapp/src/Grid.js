@@ -2,6 +2,8 @@ import React from "react";
 import DeleteItem from "./DeleteItem";
 import UpdateForm from "./UpdateForm";
 import { useState, useEffect } from "react";
+import "./App.css";
+import './index.css';
 
 
 export default function Grid() {

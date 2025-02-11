@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from './Button.js';
+import "./App.css";
+import './index.css';
 
 export default function DeleteItem({id, setPCs}) {
   function getPCs() {
