@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "./Button.js";
 
-export default function UpdateForm({ pc }) {
+export default function UpdateForm({ id, setPCs }) {
 
   return (
-   <Button buttonText="Update" handleClickText="updated"/>
+   <Button text="Update" handleClickText="updated"/>
   );
 }
