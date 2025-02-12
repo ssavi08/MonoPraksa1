@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PCManagement.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cec1ef4534dee4dfb4013c89bfe39ee4d621daa1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a1d1cf027eab071331232c3e77f2b95678625a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PCManagement.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PCManagement.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

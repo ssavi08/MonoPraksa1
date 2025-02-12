@@ -102,11 +102,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCManagement.Common.csproj",
+      "projectUniqueName": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\PCManagement.Common.csproj",
       "projectName": "PCManagement.Common",
-      "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCManagement.Common.csproj",
+      "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\PCManagement.Common.csproj",
       "packagesPath": "C:\\Users\\savi_3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\obj\\",
+      "outputPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

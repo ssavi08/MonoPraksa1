@@ -1,65 +1,57 @@
-import { useState } from "react";
-import "./App.css";
-import './index.css';
-import Button from "./Button";
+import { useState, useEffect } from "react";
+import AppService from "./AppService";
 
-export default function AddForm({ pcs, setPCs }) {
-    const [pc, setPC] = useState({ name: "", cpu: "", gpu: "" });
+export default function AddForm({ setPCs }) {
+    const initialPC = { name: "", cpuModelName: "", gpuModelName: "" };
+    const [newPC, setNewPC] = useState(initialPC);
 
     function handleChange(event) {
         const { name, value } = event.target;
-        setPC((prevPC) => ({ ...prevPC, [name]: value }));
+        setNewPC((prevPC) => ({ ...prevPC, [name]: value }));
     }
 
-    function savePCs(pcs) {
-        localStorage.setItem("pcs", JSON.stringify(pcs));
-    }
-
-    function handleSubmit(event) {
-        console.log(pc);
-        console.log(pcs);
-        const newPC = { id: Date.now().toString(), ...pc };
-        const updatedPCs = [...pcs, newPC];
-        savePCs(updatedPCs); 
-        setPCs(updatedPCs); // Updates the state in App.js
-        setPC({ id: "", name: "", cpu: "", gpu: "" });
+    async function handleSubmit(event) {
+        event.preventDefault();
+        try {
+            await AppService.addPC(newPC);
+            const updatedPCs = await AppService.getPCs();
+            setPCs(updatedPCs);
+            setNewPC(initialPC);
+            
+        } catch (error) {
+            console.error("Error adding PC: ", error);
+        }
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label>PC Name</label>
-                    <input 
-                        type="text" 
-                        name="name" 
-                        required 
-                        value={pc.name} 
-                        onChange={handleChange} 
-                    />
-                </div>
-                <div className="form-group">
-                    <label>CPU</label>
-                    <input 
-                        type="text" 
-                        name="cpu" 
-                        required 
-                        value={pc.cpu} 
-                        onChange={handleChange} 
-                    />
-                </div>
-                <div className="form-group">
-                    <label>GPU</label>
-                    <input 
-                        type="text" 
-                        name="gpu" 
-                        required 
-                        value={pc.gpu} 
-                        onChange={handleChange} 
-                    />
-                </div>
-                <Button className="save-button" text="Save" type="submit" />
-            </form>
-        </div>
+        <form onSubmit={handleSubmit}>
+            <div className="form-group">
+                <label>PC Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    value={newPC.name}
+                    onChange={handleChange}
+                    required
+                />
+                <label>CPU</label>
+                <input
+                    type="text"
+                    name="cpuModelName"
+                    value={newPC.cpuModelName}
+                    onChange={handleChange}
+                    required
+                />
+                <label>GPU</label>
+                <input
+                    type="text"
+                    name="gpuModelName"
+                    value={newPC.gpuModelName}
+                    onChange={handleChange}
+                    required
+                />
+            </div>
+            <button type="submit">Add PC</button>
+        </form>
     );
 }

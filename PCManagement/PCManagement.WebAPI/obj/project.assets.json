@@ -863,11 +863,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\PCManagement.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.WebAPI\\PCManagement.WebAPI.csproj",
       "projectName": "PCManagement.WebAPI",
-      "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\PCManagement.WebAPI.csproj",
+      "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.WebAPI\\PCManagement.WebAPI.csproj",
       "packagesPath": "C:\\Users\\savi_3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -888,17 +888,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCManagement.Common.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCManagement.Common.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\PCManagement.Common.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\PCManagement.Common.csproj"
             },
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\PCManagement.Model.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\PCManagement.Model.csproj"
             },
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj"
             },
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\PCManagement.Service.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\PCManagement.Service.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Service\\PCManagement.Service.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Service\\PCManagement.Service.csproj"
             }
           }
         }

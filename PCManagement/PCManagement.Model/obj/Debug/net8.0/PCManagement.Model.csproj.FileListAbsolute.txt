@@ -23,3 +23,16 @@ C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagementV5\PCManagement.Model\o
 C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagementV5\PCManagement.Model\obj\Debug\net8.0\refint\PCManagement.Model.dll
 C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagementV5\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.pdb
 C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagementV5\PCManagement.Model\obj\Debug\net8.0\ref\PCManagement.Model.dll
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\bin\Debug\net8.0\PCManagement.Model.deps.json
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\bin\Debug\net8.0\PCManagement.Model.dll
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\bin\Debug\net8.0\PCManagement.Model.pdb
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.csproj.AssemblyReference.cache
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.AssemblyInfoInputs.cache
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.AssemblyInfo.cs
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.csproj.CoreCompileInputs.cache
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.sourcelink.json
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.dll
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\refint\PCManagement.Model.dll
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\PCManagement.Model.pdb
+C:\Users\savi_3\Documents\GitHub\MonoPraksa1\PCManagement\PCManagement.Model\obj\Debug\net8.0\ref\PCManagement.Model.dll
