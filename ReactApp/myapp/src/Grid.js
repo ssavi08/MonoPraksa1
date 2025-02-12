@@ -11,11 +11,6 @@ export default function Grid() {
         return JSON.parse(localStorage.getItem("pcs")) || [];
     });
 
-    useEffect(() => {
-        const storedPCs = JSON.parse(localStorage.getItem("pcs")) || [];
-        setPCs(storedPCs);
-    }, []);
-
     if (pcs.length === 0) return (
         <p>No PCs saved yet</p>
     );
