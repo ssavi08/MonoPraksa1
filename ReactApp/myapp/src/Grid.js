@@ -1,24 +1,10 @@
 import React from "react";
 import DeleteItem from "./DeleteItem";
 import UpdateForm from "./UpdateForm";
-import { useState, useEffect } from "react";
 import "./App.css";
 import './index.css';
 
-
-export default function Grid() {
-    const [pcs, setPCs] = useState(() => {
-        return JSON.parse(localStorage.getItem("pcs")) || [];
-    });
-
-    useEffect(() => {
-        const storedPCs = JSON.parse(localStorage.getItem("pcs")) || [];
-        setPCs(storedPCs);
-    }, []);
-
-    if (pcs.length === 0) return (
-        <p>No PCs saved yet</p>
-    );
+export default function Grid({pcs, setPCs}) {
 
     return (
         <table>
@@ -34,8 +20,8 @@ export default function Grid() {
                 {pcs.map((pc) => (
                     <tr key={pc.id}>
                         <td>{pc.name}</td>
-                        <td>{pc.cpu}</td>
-                        <td>{pc.gpu}</td>
+                        <td>{pc.cpuModelName}</td>
+                        <td>{pc.gpuModelName}</td>
                         <td>
                             <UpdateForm id={pc.id} setPCs={setPCs} />
                             <DeleteItem id={pc.id} setPCs={setPCs} />

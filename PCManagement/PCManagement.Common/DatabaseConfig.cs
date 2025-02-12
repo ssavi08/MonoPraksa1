@@ -6,6 +6,6 @@
             "Host=localhost:5432;" +
             "Username=postgres;" +
             "Password=12345;" +
-            "Database=PCDataBase";
+            "Database=PCManagement";
     }
 }

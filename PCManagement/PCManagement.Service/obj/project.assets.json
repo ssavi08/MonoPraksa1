@@ -376,11 +376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\PCManagement.Service.csproj",
+      "projectUniqueName": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Service\\PCManagement.Service.csproj",
       "projectName": "PCManagement.Service",
-      "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\PCManagement.Service.csproj",
+      "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Service\\PCManagement.Service.csproj",
       "packagesPath": "C:\\Users\\savi_3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Service\\obj\\",
+      "outputPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -401,20 +401,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCManagement.Common.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Common\\PCManagement.Common.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\PCManagement.Common.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\PCManagement.Common.csproj"
             },
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\PCManagement.Model.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\PCManagement.Model.csproj"
             },
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.RepositoryCommon\\PCManagement.RepositoryCommon.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.RepositoryCommon\\PCManagement.RepositoryCommon.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.RepositoryCommon\\PCManagement.RepositoryCommon.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.RepositoryCommon\\PCManagement.RepositoryCommon.csproj"
             },
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Repository\\PCManagement.Repository.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Repository\\PCManagement.Repository.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Repository\\PCManagement.Repository.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Repository\\PCManagement.Repository.csproj"
             },
-            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj": {
-              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj"
+            "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj": {
+              "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.ServiceCommon\\PCManagement.ServiceCommon.csproj"
             }
           }
         }

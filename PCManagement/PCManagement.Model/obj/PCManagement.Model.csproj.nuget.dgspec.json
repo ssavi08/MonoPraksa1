@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj": {}
+    "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\PCManagement.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj": {
+    "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\PCManagement.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj",
+        "projectUniqueName": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\PCManagement.Model.csproj",
         "projectName": "PCManagement.Model",
-        "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\PCManagement.Model.csproj",
+        "projectPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\PCManagement.Model.csproj",
         "packagesPath": "C:\\Users\\savi_3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagementV5\\PCManagement.Model\\obj\\",
+        "outputPath": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

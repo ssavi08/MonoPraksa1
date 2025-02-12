@@ -90,18 +90,15 @@ namespace PCManagement.WebAPI.Controllers
                 PageNumber = currentPage,
                 Rpp = rpp
             };
+
             var pcs = await _service.GetAllPCsAsync(sorting, filter, paging);
 
-            if (pcs.Count > 0)
+            if (pcs.Count == 0)
             {
-                return Ok(pcs);
+                return Ok(new List<object>()); // Return an empty array instead of 404
             }
 
-            return NotFound(new
-            {
-                error = "Not Found",
-                message = "No PCs found."
-            });
+            return Ok(pcs);
         }
 
         [HttpGet("{id}")]
