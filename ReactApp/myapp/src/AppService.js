@@ -25,6 +25,7 @@ class AppService {
         await axios.put(`https://localhost:7190/api/PC/${id}`, updatedPC);
     }
     
+    
 }
 
 export default new AppService()

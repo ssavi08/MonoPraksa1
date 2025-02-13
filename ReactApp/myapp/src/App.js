@@ -1,36 +1,25 @@
-
-import "./App.css";
+import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom"; 
+import Home from "./Home";
 import AddForm from "./AddForm";
 import Grid from "./Grid";
-import { useEffect, useState } from "react";
 import AppService from "./AppService";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 export default function App() {
   const [pcs, setPCs] = useState([]);
-  
+
   useEffect(() => {
-    AppService.getPCs()
-    .then(setPCs)
+    AppService.getPCs().then(setPCs);
   }, []);
 
   return (
-    <Router>
-      <div>
-        <header className="headerhead"><h1>PC Manager</h1></header>
-          <h2>Add New PC</h2>
-          <AddForm setPCs={setPCs} />
-        {
-          pcs.length > 0 ? (
-            <>
-              <h2>Saved PCs:</h2>
-              <Grid pcs={pcs} setPCs={setPCs}/>
-            </>
-          ) : (
-            <div className="empty-list-message">No PCs saved yet</div>
-          )
-        }
-      </div>
-    </Router>
+    <div>
+      {/* Routes only */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/addpc" element={<AddForm setPCs={setPCs} />} />
+        <Route path="/pclist" element={<Grid pcs={pcs} setPCs={setPCs} />} />
+      </Routes>
+    </div>
   );
 }

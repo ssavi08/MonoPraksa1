@@ -18,6 +18,13 @@ code {
   border-color: chartreuse;
 }
 
+.home-button {
+  background-color: rgb(158, 0, 206);
+  text-decoration:azure;
+  color: rgb(255, 255, 255);
+  border-color: rgb(73, 0, 95);
+}
+
 .delete-button {
   background-color: red;
   text-decoration: underline;
@@ -31,9 +38,11 @@ code {
   border-color: chartreuse;
 }
 
-.option-button {
- display: flex;
- gap: 10px;
+.cancel-button {
+  background-color: rgb(197, 231, 9);
+  text-decoration:azure;
+  color: rgb(0, 0, 0);
+  border-color: chartreuse;
 }
 
 .update-button {
@@ -56,4 +65,10 @@ code {
   margin-bottom: 10px;
   width: 100%;
   margin-left: 10%;
+}
+
+.empty-list-button {
+  background-color: blue;
+  color: white;
+  border-color: chartreuse;
 }

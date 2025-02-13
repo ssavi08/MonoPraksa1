@@ -41,7 +41,7 @@ export default function UpdateForm({ id, setPCs, onClose }) {
                 <br/>
                 <div className="option-button">
                     <Button text="Save" onClick={handleUpdate} className="save-button" />
-                    <Button text="Cancel" onClick={onClose} className="update-button" />
+                    <Button text="Cancel" onClick={onClose} className="cancel-button" />
                 </div>
             </div>
     )

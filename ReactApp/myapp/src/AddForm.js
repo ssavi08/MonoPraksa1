@@ -1,30 +1,34 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import AppService from "./AppService";
+import Button from "./Button";
 
 export default function AddForm({ setPCs }) {
-    const initialPC = { name: "", cpuModelName: "", gpuModelName: "" };
-    const [newPC, setNewPC] = useState(initialPC);
+  const initialPC = { name: "", cpuModelName: "", gpuModelName: "" };
+  const [newPC, setNewPC] = useState(initialPC);
+  const navigate = useNavigate();
 
-    function handleChange(event) {
-        const { name, value } = event.target;
-        setNewPC((prevPC) => ({ ...prevPC, [name]: value }));
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setNewPC((prevPC) => ({ ...prevPC, [name]: value }));
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    try {
+      await AppService.addPC(newPC);
+      const updatedPCs = await AppService.getPCs();
+      setPCs(updatedPCs);
+      navigate("/pclist"); // Redirect to PC List after adding
+    } catch (error) {
+      console.error("Error adding PC: ", error);
     }
+  }
 
-    async function handleSubmit(event) {
-        event.preventDefault();
-        try {
-            await AppService.addPC(newPC);
-            const updatedPCs = await AppService.getPCs();
-            setPCs(updatedPCs);
-            setNewPC(initialPC);
-            
-        } catch (error) {
-            console.error("Error adding PC: ", error);
-        }
-    }
-
-    return (
-        <form onSubmit={handleSubmit}>
+  return (
+    <div>
+      <h2>Add New PC</h2>
+      <form onSubmit={handleSubmit}>
             <div className="form-group">
                 <label>PC Name</label>
                 <input
@@ -52,6 +56,8 @@ export default function AddForm({ setPCs }) {
                 />
             </div>
             <button type="submit" className="save-button">Add PC</button>
+            <Button text="Cancel" className="cancel-button" onClick={() => navigate("/")} />
         </form>
-    );
+    </div>
+  );
 }
