@@ -1,11 +1,9 @@
-import React from "react";
-import Popup from "./Popup.js";
-import "./App.css";
-import './index.css';
+import './App.css';
 
-export default function Button({text, onClick, className}) {
-    
+function Button({ text, onClick, className }) {
     return (
-    <button className={className} onClick={onClick}>{text}</button>
-    )
+        <button className={className} onClick={onClick}>{text}</button>
+    );
 }
+
+export default Button;

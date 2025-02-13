@@ -47,38 +47,45 @@ namespace PCManagement.Repository
             {
                 using (var connection = new NpgsqlConnection(DatabaseConfig.connString))
                 {
+                    await connection.OpenAsync();
+
                     var commandText = "SELECT \"Id\", \"Name\", \"CpuModelName\", \"GpuModelName\" FROM \"PC\" WHERE \"Id\" = @id;";
                     using var cmd = new NpgsqlCommand(commandText, connection);
                     cmd.Parameters.AddWithValue("id", NpgsqlTypes.NpgsqlDbType.Uuid, id);
 
-                    await connection.OpenAsync();
-
                     var reader = await cmd.ExecuteReaderAsync();
-
                     if (!reader.HasRows)
                     {
                         await connection.CloseAsync();
                         return false;
                     }
 
-                    await connection.CloseAsync();
+                    await reader.ReadAsync();
+                    string existingName = reader["Name"] as string;
+                    string existingCpu = reader["CpuModelName"] as string;
+                    string existingGpu = reader["GpuModelName"] as string;
+                    await reader.CloseAsync();
 
-                    commandText = "UPDATE \"PC\" set \"Name\" = @name, \"CpuModelName\" = @cpu, \"GpuModelName\" = @gpu WHERE \"Id\" = @id;";
+                    commandText = @"
+                        UPDATE ""PC"" 
+                        SET ""Name"" = COALESCE(@name, ""Name""), 
+                            ""CpuModelName"" = COALESCE(@cpu, ""CpuModelName""), 
+                            ""GpuModelName"" = COALESCE(@gpu, ""GpuModelName"") 
+                        WHERE ""Id"" = @id;";
+
                     using var updateCommand = new NpgsqlCommand(commandText, connection);
-                    updateCommand.Parameters.AddWithValue("name", updatedPC.Name ?? (object)DBNull.Value);
-                    updateCommand.Parameters.AddWithValue("cpu", updatedPC.CpuModelName ?? (object)DBNull.Value);
-                    updateCommand.Parameters.AddWithValue("gpu", updatedPC.GpuModelName ?? (object)DBNull.Value);
+                    updateCommand.Parameters.AddWithValue("name", (object?)updatedPC.Name ?? DBNull.Value);
+                    updateCommand.Parameters.AddWithValue("cpu", (object?)updatedPC.CpuModelName ?? DBNull.Value);
+                    updateCommand.Parameters.AddWithValue("gpu", (object?)updatedPC.GpuModelName ?? DBNull.Value);
                     updateCommand.Parameters.AddWithValue("id", NpgsqlTypes.NpgsqlDbType.Uuid, id);
 
-                    await connection.OpenAsync();
                     var affectedRows = await updateCommand.ExecuteNonQueryAsync();
-                    await connection.CloseAsync();
-
-                    return true;
+                    return affectedRows > 0;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine($"Update failed: {ex.Message}");
                 return false;
             }
         }

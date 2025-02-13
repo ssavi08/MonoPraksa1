@@ -1,12 +1,14 @@
-import React from "react";
-import DeleteItem from "./DeleteItem";
+import { useState } from "react";
+import DeletePC from "./Delete";
 import UpdateForm from "./UpdateForm";
 import "./App.css";
 import './index.css';
 
 export default function Grid({pcs, setPCs}) {
+    const [selectedPCId, setSelectedPCId] = useState(null);
 
     return (
+        <div className="table-style">
         <table>
             <thead>
                 <tr>
@@ -23,12 +25,19 @@ export default function Grid({pcs, setPCs}) {
                         <td>{pc.cpuModelName}</td>
                         <td>{pc.gpuModelName}</td>
                         <td>
-                            <UpdateForm id={pc.id} setPCs={setPCs} />
-                            <DeleteItem id={pc.id} setPCs={setPCs} />
+                            <button className="update-button" onClick={() => setSelectedPCId(pc.id)}>Update</button>
+                            <DeletePC id={pc.id} setPCs={setPCs} />
                         </td>
                     </tr>
                 ))}
             </tbody>
         </table>
+
+        {selectedPCId && (
+            <div className="update-form">
+                <UpdateForm id={selectedPCId} setPCs={setPCs} onClose={() => setSelectedPCId(null)}></UpdateForm>
+            </div>
+        )}
+        </div>
     );
 }

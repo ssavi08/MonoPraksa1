@@ -1,21 +1,24 @@
 import React from "react";
 import Button from "./Button.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import './index.css';
+import AppService from "./AppService.js";
 
-export default function UpdateForm({ id, setPCs }) {
-  const [isEditing, setIsEditing] = useState(false);
-  const [updatedPC, setUpdatedPC] = useState({ name: "", cpu: "", gpu: "" });
+export default function UpdateForm({ id, setPCs, onClose }) {
+  const [updatedPC, setUpdatedPC] = useState({ name: "", cpuModelName: "", gpuModelName: "" });
 
-  function handleEditClick() {
-      setIsEditing(true);
-      const pcs = JSON.parse(localStorage.getItem("pcs")) || [];
-      const pcToEdit = pcs.find(pc => pc.id === id);
-      if (pcToEdit) {
-          setUpdatedPC(pcToEdit);
-      }
-  }
+  useEffect(() => {
+    async function fetchPC() {
+        try{
+            const data = await AppService.getPCById(id);
+            setUpdatedPC(data);
+        } catch (error) {
+            console.error("Failed to fetch data", error);
+        }
+    }
+    fetchPC();
+  }, [id]);
 
   function handleChange(event) {
       const { name, value } = event.target;
@@ -23,21 +26,23 @@ export default function UpdateForm({ id, setPCs }) {
   }
 
   function handleUpdate() {
-      const pcs = JSON.parse(localStorage.getItem("pcs")) || [];
-      const updatedPCs = pcs.map(pc => (pc.id === id ? updatedPC : pc));
-      localStorage.setItem("pcs", JSON.stringify(updatedPCs));
-      setPCs(updatedPCs);
-      setIsEditing(false);
+      AppService.updatePC(id, updatedPC)
+        .then(() => AppService.getPCs().then(setPCs)) //refreshing pc list
+        .then(onClose)
+        .catch((error) => console.error("Update failed.", error));
   }
 
-  return isEditing ? (
-      <div className="container">
-          <input type="text" name="name" value={updatedPC.name} onChange={handleChange} />
-          <input type="text" name="cpu" value={updatedPC.cpu} onChange={handleChange} />
-          <input type="text" name="gpu" value={updatedPC.gpu} onChange={handleChange} />
-          <Button text="Save" onClick={handleUpdate} className="update-button" />
-      </div>
-  ) : (
-      <Button text="Update" onClick={handleEditClick} className="update-button" />
-  );
+  return (
+            <div className="update-form">
+                <h2>Update PC</h2>
+                <input type="text" placeholder={updatedPC.name} name="name" value={updatedPC.name} onChange={handleChange} />
+                <input type="text" placeholder={updatedPC.cpuModelName} name="cpuModelName" value={updatedPC.cpuModelName} onChange={handleChange} />
+                <input type="text" name="gpuModelName" value={updatedPC.gpuModelName} onChange={handleChange} />
+                <br/>
+                <div className="option-button">
+                    <Button text="Save" onClick={handleUpdate} className="save-button" />
+                    <Button text="Cancel" onClick={onClose} className="update-button" />
+                </div>
+            </div>
+    )
 }

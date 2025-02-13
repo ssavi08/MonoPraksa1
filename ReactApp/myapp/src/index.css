@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+.button {
+  background-color: rgb(2, 92, 118);
+  color: white;
+  border-color: chartreuse;
+}
+
 .delete-button {
   background-color: red;
   text-decoration: underline;
@@ -21,14 +27,33 @@ code {
 
 .save-button {
   background-color: green;
-  text-decoration: underline;
   color: white;
   border-color: chartreuse;
 }
 
+.option-button {
+ display: flex;
+ gap: 10px;
+}
+
 .update-button {
   background-color: blue;
-  text-decoration: underline;
   color: white;
   border-color: chartreuse;
+}
+
+.form-buttons {
+  border: 10px;
+  border-color: black;
+}
+
+.table-style {
+  display: flex
+}
+
+.update-form {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: 10%;
 }

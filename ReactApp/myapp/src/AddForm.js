@@ -51,7 +51,7 @@ export default function AddForm({ setPCs }) {
                     required
                 />
             </div>
-            <button type="submit">Add PC</button>
+            <button type="submit" className="save-button">Add PC</button>
         </form>
     );
 }
