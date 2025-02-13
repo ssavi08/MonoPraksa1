@@ -62,8 +62,7 @@
               "RelativeToolTip": "PCManagement.WebAPI\\Program.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T11:36:12.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:36:12.311Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "PCManagement.Model\\Models\\PC.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T11:07:04.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:07:04.764Z"
             },
             {
               "$type": "Document",
@@ -88,21 +86,19 @@
               "RelativeToolTip": "PCManagement.Common\\DatabaseConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T11:05:54.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:05:54.081Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PCManagement.Common",
+              "Title": "PCManagement.Common.csproj",
               "DocumentMoniker": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\PCManagement.Common.csproj",
               "RelativeDocumentMoniker": "PCManagement.Common\\PCManagement.Common.csproj",
               "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.Common\\PCManagement.Common.csproj",
               "RelativeToolTip": "PCManagement.Common\\PCManagement.Common.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-12T11:05:43.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:05:43.889Z"
             },
             {
               "$type": "Document",
@@ -114,8 +110,7 @@
               "RelativeToolTip": "PCManagement.ServiceCommon\\IPCService.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAIAwwBEAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T12:10:25.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T12:10:25.574Z"
             },
             {
               "$type": "Document",
@@ -127,8 +122,7 @@
               "RelativeToolTip": "PCManagement.RepositoryCommon\\IPCRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T12:24:38.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T12:24:38.053Z"
             },
             {
               "$type": "Document",
@@ -138,7 +132,7 @@
               "RelativeDocumentMoniker": "PCManagement.WebAPI\\Controllers\\PCController.cs",
               "ToolTip": "C:\\Users\\savi_3\\Documents\\GitHub\\MonoPraksa1\\PCManagement\\PCManagement.WebAPI\\Controllers\\PCController.cs",
               "RelativeToolTip": "PCManagement.WebAPI\\Controllers\\PCController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAowFwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAcwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T10:23:20.212Z",
               "EditorCaption": ""
@@ -153,8 +147,7 @@
               "RelativeToolTip": "PCManagement.Repository\\PCRepository.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T10:12:18.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T10:12:18.038Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "PCManagement.Service\\AbstractPCService.cs",
               "ViewState": "AgIAABoAAAAAAAAAAIA6wCsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T11:35:58.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T11:35:58.648Z"
             },
             {
               "$type": "Document",
